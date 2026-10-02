@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\title{Learning Python}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+    \item \textbf{\texttt{Counter(iterable)}} (from \texttt{collections}) builds a dictionary subclass that maps each element to its frequency. For example, \texttt{Counter([1,1,2,3,3,3])} gives \texttt{\{3:3, 1:2, 2:1\}}. It supports arithmetic operations and is the go-to tool for frequency counting in interview problems.
+
+    \item \textbf{\texttt{most\_common(n)}} returns a list of the $n$ most frequent elements as \texttt{(element, count)} pairs, sorted in descending order. Omitting $n$ returns all elements. In the \texttt{topKFrequent} solution, iterating over \texttt{map\_n.most\_common()} and collecting the first \texttt{k} keys gives exactly the top-$k$ most frequent elements in $O(n \log n)$ time.
+
+\end{itemize}
+
+\end{document}
