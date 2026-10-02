@@ -13,13 +13,15 @@
 \maketitle
 
 \begin{itemize}
-    \item \textbf{\texttt{Counter(iterable)}} (from \texttt{collections}) builds a dictionary subclass that maps each element to its frequency. For example, \texttt{Counter([1,1,2,3,3,3])} gives \texttt{\{3:3, 1:2, 2:1\}}. It supports arithmetic operations and is the go-to tool for frequency counting in interview problems.
+    \item \textbf{\texttt{Counter(iterable)}} (from \texttt{collections}) maps each element to its frequency and is the go-to tool for frequency counting in interview problems.
 
-    \item \textbf{\texttt{most\_common(n)}} returns a list of the $n$ most frequent elements as \texttt{(element, count)} pairs, sorted in descending order. Omitting $n$ returns all elements. In the \texttt{topKFrequent} solution, iterating over \texttt{map\_n.most\_common()} and collecting the first \texttt{k} keys gives exactly the top-$k$ most frequent elements in $O(n \log n)$ time.
+    \item \textbf{\texttt{most\_common(n)}} returns the $n$ most frequent \texttt{(element, count)} pairs in descending order (omit $n$ for all), making it ideal for top-$k$ frequency problems.
 
-    \item \textbf{\texttt{"".join([char for char in s if char.isalnum()])}} filters a string to alphanumeric characters only and rejoins them. \texttt{char.isalnum()} returns \texttt{True} if the character is a letter (a--z, A--Z) or a digit (0--9), and \texttt{False} otherwise (spaces, punctuation, etc.). Useful for normalizing strings before palindrome or anagram checks.
+    \item \textbf{\texttt{"".join([char for char in s if char.isalnum()])}} strips a string to only letters and digits using \texttt{isalnum()}, which returns \texttt{True} for a--z, A--Z, and 0--9.
 
-    \item \textbf{\texttt{char.isnumeric()}} returns \texttt{True} if the character represents a numeric value. It is broader than \texttt{isdigit()}: it also accepts Unicode numeric characters such as fractions and superscripts. Use \texttt{isdigit()} when you want strictly ASCII digits 0--9; use \texttt{isnumeric()} when any Unicode numeric character should count.
+    \item \textbf{\texttt{char.isnumeric()}} accepts any Unicode numeric character (including fractions and superscripts), while \texttt{isdigit()} is stricter (ASCII digits 0--9 only).
+
+    \item Never call \textbf{\texttt{pop(i)}} inside a loop that increments \texttt{i} forward, as each removal shifts remaining indices; a backward loop such as \texttt{for i in range(k, -1, -1): nums.pop(i)} is safe.
 
 \end{itemize}
 
@@ -53,7 +55,7 @@
 \rowcolor{gray!20} \multicolumn{4}{l}{\textbf{2. Two Pointers}} \\
 \href{https://leetcode.com/problems/reverse-string/}{344. Reverse String} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/valid-palindrome/}{125. Valid Palindrome} & Easy & $\checkmark$ & \\
-\href{https://leetcode.com/problems/remove-element/}{27. Remove Element} & Easy & & \\
+\href{https://leetcode.com/problems/remove-element/}{27. Remove Element} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/remove-duplicates-from-sorted-array/}{26. Remove Duplicates from Sorted Array} & Easy & & \\
 \href{https://leetcode.com/problems/move-zeroes/}{283. Move Zeroes} & Easy & & \\
 \href{https://leetcode.com/problems/squares-of-a-sorted-array/}{977. Squares of a Sorted Array} & Easy & & \\
