@@ -23,6 +23,8 @@
 
     \item Never call \textbf{\texttt{pop(i)}} inside a loop that increments \texttt{i} forward, as each removal shifts remaining indices; a backward loop such as \texttt{for i in range(k, -1, -1): nums.pop(i)} is safe.
 
+    \item \textbf{\texttt{del nums[i]}} is slightly faster than \textbf{\texttt{nums.pop(i)}} at the same O(n) complexity because \texttt{pop} has the extra overhead of returning the removed value, which can matter in tight loops over large lists.
+
     \item \textbf{\texttt{list.index(i)}} returns the index of the first occurrence of value \texttt{i} in the list, raising \texttt{ValueError} if it is not found.
 
     \item \textbf{\texttt{list.count(value)}} returns the number of times \texttt{value} appears in the list.
@@ -60,9 +62,9 @@
 
 \rowcolor{gray!20} \multicolumn{4}{l}{\textbf{2. Two Pointers}} \\
 \href{https://leetcode.com/problems/reverse-string/}{344. Reverse String} & Easy & & $\checkmark$ \\
-\href{https://leetcode.com/problems/valid-palindrome/}{125. Valid Palindrome} & Easy & $\checkmark$ & \\
+\href{https://leetcode.com/problems/valid-palindrome/}{125. Valid Palindrome} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/remove-element/}{27. Remove Element} & Easy & & $\checkmark$ \\
-\href{https://leetcode.com/problems/remove-duplicates-from-sorted-array/}{26. Remove Duplicates from Sorted Array} & Easy & & \\
+\href{https://leetcode.com/problems/remove-duplicates-from-sorted-array/}{26. Remove Duplicates from Sorted Array} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/move-zeroes/}{283. Move Zeroes} & Easy & & \\
 \href{https://leetcode.com/problems/squares-of-a-sorted-array/}{977. Squares of a Sorted Array} & Easy & & \\
 \href{https://leetcode.com/problems/merge-sorted-array/}{88. Merge Sorted Array} & Easy & & \\
