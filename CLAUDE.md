@@ -5,3 +5,5 @@
 2. **Done**: A problem is marked Done when it was solved and beat 100% runtime, so it will not be revisited again.
 
 3. **Itemized points**: Each bullet point in the itemized list must be exactly one sentence.
+
+4. **PDF recompilation**: After any change to `learning_python.tex`, recompile the PDF by running `pdflatex learning_python.tex` from the project directory, then commit and push both the `.tex` and `.pdf` files together.
