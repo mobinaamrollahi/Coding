@@ -6,4 +6,4 @@
 
 3. **Itemized points**: Each bullet point in the itemized list must be exactly one sentence.
 
-4. **PDF recompilation**: After any change to `learning_python.tex`, recompile the PDF by running `pdflatex learning_python.tex` from the project directory, then commit and push both the `.tex` and `.pdf` files together.
+4. **PDF recompilation and pushing**: After any change to `learning_python.tex`, recompile the PDF by running `pdflatex learning_python.tex` and commit both the `.tex` and `.pdf` files, but only push once at the end of the session when the user is done making changes.
