@@ -23,6 +23,12 @@
 
     \item Never call \textbf{\texttt{pop(i)}} inside a loop that increments \texttt{i} forward, as each removal shifts remaining indices; a backward loop such as \texttt{for i in range(k, -1, -1): nums.pop(i)} is safe.
 
+    \item \textbf{\texttt{list.index(i)}} returns the index of the first occurrence of value \texttt{i} in the list, raising \texttt{ValueError} if it is not found.
+
+    \item \textbf{\texttt{list.count(value)}} returns the number of times \texttt{value} appears in the list.
+
+    \item \textbf{\texttt{math.prod(list)}} (from \texttt{math}) returns the product of all elements in the iterable, returning \texttt{1} for an empty iterable.
+
 \end{itemize}
 
 \section{LeetCode Practice}
@@ -50,7 +56,7 @@
 \href{https://leetcode.com/problems/isomorphic-strings/}{205. Isomorphic Strings} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/group-anagrams/}{49. Group Anagrams} & Medium & & $\checkmark$ \\
 \href{https://leetcode.com/problems/top-k-frequent-elements/}{347. Top K Frequent Elements} & Medium & & $\checkmark$ \\
-\href{https://leetcode.com/problems/product-of-array-except-self/}{238. Product of Array Except Self} & Medium & $\checkmark$ & \\
+\href{https://leetcode.com/problems/product-of-array-except-self/}{238. Product of Array Except Self} & Medium & & $\checkmark$ \\
 
 \rowcolor{gray!20} \multicolumn{4}{l}{\textbf{2. Two Pointers}} \\
 \href{https://leetcode.com/problems/reverse-string/}{344. Reverse String} & Easy & & $\checkmark$ \\
