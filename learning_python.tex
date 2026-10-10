@@ -43,6 +43,8 @@
 
     \item A \textbf{stack} in Python is simply a \texttt{list} where \textbf{\texttt{append(val)}} acts as push and \textbf{\texttt{pop()}} (no argument) acts as pop, both in O(1) time.
 
+    \item Prefer \textbf{\texttt{stack.append()}} and \textbf{\texttt{stack.pop()}} over slice assignment such as \texttt{s = s[:-1]}, which creates a full O(n) copy each time and causes quadratic runtime in a loop.
+
 \end{itemize}
 
 \section{LeetCode Practice}
