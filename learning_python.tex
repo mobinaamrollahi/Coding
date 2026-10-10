@@ -45,6 +45,8 @@
 
     \item Prefer \textbf{\texttt{stack.append()}} and \textbf{\texttt{stack.pop()}} over slice assignment such as \texttt{s = s[:-1]}, which creates a full O(n) copy each time and causes quadratic runtime in a loop.
 
+    \item Two separate \textbf{\texttt{if}} statements in a loop are evaluated independently (both can trigger in the same iteration), whereas \textbf{\texttt{if}/\texttt{elif}} ensures only one branch fires per iteration.
+
 \end{itemize}
 
 \section{LeetCode Practice}
@@ -103,7 +105,7 @@
 \href{https://leetcode.com/problems/baseball-game/}{682. Baseball Game} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/}{1047. Remove All Adjacent Duplicates In String} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/make-the-string-great/}{1544. Make The String Great} & Easy & & $\checkmark$ \\
-\href{https://leetcode.com/problems/backspace-string-compare/}{844. Backspace String Compare} & Easy & & \\
+\href{https://leetcode.com/problems/backspace-string-compare/}{844. Backspace String Compare} & Easy & & $\checkmark$ \\
 \href{https://leetcode.com/problems/implement-queue-using-stacks/}{232. Implement Queue using Stacks} & Easy & & \\
 \href{https://leetcode.com/problems/next-greater-element-i/}{496. Next Greater Element I} & Easy & & \\
 \href{https://leetcode.com/problems/min-stack/}{155. Min Stack} & Medium & & \\
