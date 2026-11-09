@@ -47,7 +47,7 @@
 
     \item Two separate \textbf{\texttt{if}} statements in a loop are evaluated independently (both can trigger in the same iteration), whereas \textbf{\texttt{if}/\texttt{elif}} ensures only one branch fires per iteration.
 
-    \item The \textbf{slow and fast pointer} technique uses two pointers where fast moves two steps per iteration and slow moves one; because their relative speed is one, once inside a cycle the fast pointer gains on slow by exactly one step each iteration, so they are guaranteed to meet, confirming a cycle exists.
+    \item The \textbf{slow and fast pointer} technique (Floyd's cycle finding algorithm) uses two pointers where fast moves two steps per iteration and slow moves one; because their relative speed is one, they are guaranteed to meet if a cycle exists.
 
 \end{itemize}
 
