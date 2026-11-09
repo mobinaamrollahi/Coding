@@ -47,6 +47,8 @@
 
     \item Two separate \textbf{\texttt{if}} statements in a loop are evaluated independently (both can trigger in the same iteration), whereas \textbf{\texttt{if}/\texttt{elif}} ensures only one branch fires per iteration.
 
+    \item The \textbf{slow and fast pointer} technique uses two pointers where fast moves two steps per iteration and slow moves one; because their relative speed is one, once inside a cycle the fast pointer gains on slow by exactly one step each iteration, so they are guaranteed to meet, confirming a cycle exists.
+
 \end{itemize}
 
 \section{LeetCode Practice}
@@ -129,12 +131,12 @@
 \href{https://leetcode.com/problems/remove-duplicates-from-sorted-list/}{83. Remove Duplicates from Sorted List} & Easy & & & $\checkmark$ \\
 \href{https://leetcode.com/problems/remove-linked-list-elements/}{203. Remove Linked List Elements} & Easy & & & $\checkmark$ \\
 \href{https://leetcode.com/problems/reverse-linked-list/}{206. Reverse Linked List} & Easy & & $\star$ & \\
-\href{https://leetcode.com/problems/linked-list-cycle/}{141. Linked List Cycle} & Easy & Nov~9 & & \\
-\href{https://leetcode.com/problems/intersection-of-two-linked-lists/}{160. Intersection of Two Linked Lists} & Easy & Nov~9 & & \\
-\href{https://leetcode.com/problems/palindrome-linked-list/}{234. Palindrome Linked List} & Easy & Nov~10 & & \\
-\href{https://leetcode.com/problems/remove-nth-node-from-end-of-list/}{19. Remove Nth Node From End of List} & Medium & Nov~10 & & \\
-\href{https://leetcode.com/problems/add-two-numbers/}{2. Add Two Numbers} & Medium & Nov~11 & & \\
-\href{https://leetcode.com/problems/reorder-list/}{143. Reorder List} & Medium & Nov~11 & & \\
+\href{https://leetcode.com/problems/linked-list-cycle/}{141. Linked List Cycle} & Easy & Nov~9 & $\star$ & \\
+\href{https://leetcode.com/problems/intersection-of-two-linked-lists/}{160. Intersection of Two Linked Lists} & Easy & Nov~9 & $\star$ & \\
+\href{https://leetcode.com/problems/palindrome-linked-list/}{234. Palindrome Linked List} & Easy & Nov~10 & $\star$ & \\
+\href{https://leetcode.com/problems/remove-nth-node-from-end-of-list/}{19. Remove Nth Node From End of List} & Medium & Nov~10 & $\star$ & \\
+\href{https://leetcode.com/problems/add-two-numbers/}{2. Add Two Numbers} & Medium & Nov~11 & $\star$ & \\
+\href{https://leetcode.com/problems/reorder-list/}{143. Reorder List} & Medium & Nov~11 & $\star$ & \\
 
 \rowcolor{gray!20} \multicolumn{5}{l}{\textbf{7. Trees (DFS and BFS)}} \\
 \href{https://leetcode.com/problems/binary-tree-inorder-traversal/}{94. Binary Tree Inorder Traversal} & Easy & Nov~12 & & \\
