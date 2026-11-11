@@ -51,6 +51,8 @@
 
     \item The \textbf{slow and fast pointer} technique (Floyd's cycle finding algorithm) uses two pointers where fast moves two steps per iteration and slow moves one; because their relative speed is one, they are guaranteed to meet if a cycle exists.
 
+    \item To find the \textbf{nth node from the end} of a linked list, advance fast by $n$ steps first, then move both slow and fast together one step at a time; when fast reaches the end, slow is pointing to the node whose \texttt{next} should be updated.
+
 \end{itemize}
 
 \section{LeetCode Practice}
@@ -136,7 +138,7 @@
 \href{https://leetcode.com/problems/linked-list-cycle/}{141. Linked List Cycle} & Easy & Nov~9 & $\star$ & \\
 \href{https://leetcode.com/problems/intersection-of-two-linked-lists/}{160. Intersection of Two Linked Lists} & Easy & Nov~9 & $\star$ & \\
 \href{https://leetcode.com/problems/palindrome-linked-list/}{234. Palindrome Linked List} & Easy & Nov~10 & & $\checkmark$ \\
-\href{https://leetcode.com/problems/remove-nth-node-from-end-of-list/}{19. Remove Nth Node From End of List} & Medium & Nov~10 & & \\
+\href{https://leetcode.com/problems/remove-nth-node-from-end-of-list/}{19. Remove Nth Node From End of List} & Medium & Nov~10 & $\star$ & \\
 \href{https://leetcode.com/problems/add-two-numbers/}{2. Add Two Numbers} & Medium & Nov~11 & & \\
 \href{https://leetcode.com/problems/reorder-list/}{143. Reorder List} & Medium & Nov~11 & & \\
 
