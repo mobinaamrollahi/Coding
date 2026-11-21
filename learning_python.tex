@@ -53,6 +53,10 @@
 
     \item To find the \textbf{nth node from the end} of a linked list, advance fast by $n$ steps first, then move both slow and fast together one step at a time; when fast reaches the end, slow is pointing to the node whose \texttt{next} should be updated.
 
+    \item When comparing two \textbf{\texttt{Counter}} objects with \textbf{\texttt{\&}} (intersection), the result keeps the minimum count for each key, so \texttt{ct\_s \& ct\_t == ct\_t} is a clean O(k) check that \texttt{ct\_s} contains all required characters with at least the required frequencies from \texttt{ct\_t}.
+
+    \item To find the \textbf{minimum window substring} among all valid windows collected in a list, use \texttt{min(results, key=len)}, which returns the shortest string in a single pass rather than tracking a minimum length variable manually.
+
 \end{itemize}
 
 \section{LeetCode Practice}
@@ -107,7 +111,7 @@
 \href{https://leetcode.com/problems/longest-substring-without-repeating-characters/}{3. Longest Substring Without Repeating Characters} & Medium & & & $\checkmark$ \\
 \href{https://leetcode.com/problems/permutation-in-string/}{567. Permutation in String} & Medium & & & $\checkmark$ \\
 \href{https://leetcode.com/problems/longest-repeating-character-replacement/}{424. Longest Repeating Character Replacement} & Medium & & & $\checkmark$ \\
-\href{https://leetcode.com/problems/minimum-window-substring/}{76. Minimum Window Substring} & Hard & Nov~20 & & \\
+\href{https://leetcode.com/problems/minimum-window-substring/}{76. Minimum Window Substring} & Hard & Nov~20 & $\star$ & \\
 
 \rowcolor{gray!20} \multicolumn{5}{l}{\textbf{4. Stack}} \\
 \href{https://leetcode.com/problems/valid-parentheses/}{20. Valid Parentheses} & Easy & & & $\checkmark$ \\
