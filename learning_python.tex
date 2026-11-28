@@ -53,6 +53,8 @@
 
     \item To find the \textbf{nth node from the end} of a linked list, advance fast by $n$ steps first, then move both slow and fast together one step at a time; when fast reaches the end, slow is pointing to the node whose \texttt{next} should be updated.
 
+    \item To \textbf{reverse a linked list} with the \textbf{three-pointer loop}, start with \texttt{prev = None} and \texttt{curr = head}, then while \texttt{curr} is not \texttt{None} set \texttt{next = curr.next} to hold the rest of the list, point \texttt{curr.next = prev}, move \texttt{prev = curr}, and move \texttt{curr = next}, so that when the loop ends \texttt{prev} is the new head and can simply be returned.
+
     \item When comparing two \textbf{\texttt{Counter}} objects with \textbf{\texttt{\&}} (intersection), the result keeps the minimum count for each key, so \texttt{ct\_s \& ct\_t == ct\_t} is a clean O(k) check that \texttt{ct\_s} contains all required characters with at least the required frequencies from \texttt{ct\_t}.
 
     \item To find the \textbf{minimum window substring} among all valid windows collected in a list, use \texttt{min(results, key=len)}, which returns the shortest string in a single pass rather than tracking a minimum length variable manually.
@@ -149,7 +151,7 @@
 \href{https://leetcode.com/problems/palindrome-linked-list/}{234. Palindrome Linked List} & Easy & Nov~10 & & $\checkmark$ \\
 \href{https://leetcode.com/problems/remove-nth-node-from-end-of-list/}{19. Remove Nth Node From End of List} & Medium & Nov~10 & $\star$ & \\
 \href{https://leetcode.com/problems/add-two-numbers/}{2. Add Two Numbers} & Medium & Nov~11 & $\star$ & \\
-\href{https://leetcode.com/problems/reorder-list/}{143. Reorder List} & Medium & Nov~11 & & \\
+\href{https://leetcode.com/problems/reorder-list/}{143. Reorder List} & Medium & Nov~11 & & $\checkmark$ \\
 \href{https://leetcode.com/problems/merge-k-sorted-lists/}{23. Merge k Sorted Lists} & Hard & Nov~27 & & \\
 
 \rowcolor{gray!20} \multicolumn{5}{l}{\textbf{7. Trees (DFS and BFS)}} \\
